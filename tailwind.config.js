@@ -5,6 +5,8 @@ export default {
     "./about.html",
     "./courses.html",
     "./contact.html",
+    "./participant-testimonials.html",
+    "./parent-testimonials.html",
     "./src/**/*.{js,ts,jsx,tsx,html}",
   ],
   theme: {
