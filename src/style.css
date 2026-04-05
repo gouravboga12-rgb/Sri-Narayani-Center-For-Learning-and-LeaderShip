@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    @apply text-textDark bg-gray-50;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-secondary text-primary font-semibold py-2 px-6 rounded shadow-md hover:bg-yellow-400 transition transform hover:-translate-y-1;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-secondary text-secondary font-semibold py-2 px-6 rounded hover:bg-secondary hover:text-primary transition transform hover:-translate-y-1;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 p-6 flex flex-col h-full;
+  }
+
+  .footer-social-icon {
+    @apply h-10 w-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-secondary hover:text-primary transition-all duration-300 transform hover:-translate-y-1;
+  }
+}
+
+/* Vertical Scroll Animation for Reviews */
+@keyframes scroll-vertical {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes scroll-vertical-reverse {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+.animate-scroll-vertical {
+  animation: scroll-vertical 60s linear infinite;
+}
+
+.animate-scroll-vertical-slow {
+  animation: scroll-vertical 80s linear infinite;
+}
+
+.animate-scroll-vertical:hover, 
+.animate-scroll-vertical-slow:hover {
+  animation-play-state: paused;
+}
+
+/* Top/Bottom Fade Effect for Reviews Container */
+.mask-y {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+}
+
+
+/* Floating WhatsApp Pulse Animation */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(0.8);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse-ring 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.1);
+  animation: none;
+}
+
+/* Utilities */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Narayani Center for Learning and Leadership</title>
+    <meta name="description" content="Institute focused on training and education. Teacher training, reading programs, and more." />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-primary text-textLight sticky top-0 z-50 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex items-center gap-3">
+          <img src="/images/logo.jpeg" alt="Sri Narayani Center Logo" class="h-12 w-12 md:h-14 md:w-14 rounded-full object-cover border-2 border-secondary shadow-md" />
+          <a href="/" class="flex flex-col justify-center">
+            <span class="text-xl md:text-2xl font-extrabold tracking-tight text-white drop-shadow-sm">Sri Narayani Center</span>
+            <span class="text-[10px] md:text-xs font-bold text-secondary tracking-widest uppercase mt-0.5">For Learning <span class="text-white opacity-80">&</span> Leadership</span>
+          </a>
+        </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-6 shrink-0">
+              <a href="/index.html" class="text-secondary font-semibold hover:text-yellow-400 px-3 py-2 rounded-md">Home</a>
+              <a href="/about.html" class="hover:text-secondary px-3 py-2 rounded-md transition font-medium">About</a>
+              <a href="/courses.html" class="hover:text-secondary px-3 py-2 rounded-md transition font-medium">Courses</a>
+              <a href="/contact.html" class="hover:text-secondary px-3 py-2 rounded-md transition font-medium">Contact</a>
+            </div>
+          </div>
+          <div class="-mr-2 flex md:hidden">
+            <button id="mobile-menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md hover:text-secondary focus:outline-none">
+              <svg class="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-accent border-t border-blue-900">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="/index.html" class="text-secondary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+          <a href="/about.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">About</a>
+          <a href="/courses.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Courses</a>
+          <a href="/contact.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-primary text-textLight py-24 md:py-32 overflow-hidden">
+      <!-- Background pattern/image overlay -->
+      <div class="absolute inset-0 z-0 opacity-20">
+        <img src="/images/image1.jpeg" alt="Background" class="w-full h-full object-cover">
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Empowering Leaders of Tomorrow</h1>
+        <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto text-gray-200">World-class training programs designed to enhance skills, build confidence, and foster lifelong learning.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/courses.html" class="btn-primary text-lg">Explore Courses</a>
+          <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20your%20courses" target="_blank" class="btn-outline text-lg border-secondary text-secondary">Contact via WhatsApp</a>
+        </div>
+        
+        <div class="mt-10 flex flex-col items-center gap-3">
+          <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 shadow-Inner">
+            <img src="/images/ISO-certified.jpeg" alt="ISO 9001:2015 Certified" class="h-12 w-auto rounded shadow-lg border border-white/50" />
+            <div class="text-left">
+              <p class="text-[10px] uppercase tracking-widest font-bold text-secondary">Quality Management System</p>
+              <h4 class="text-sm font-bold text-white uppercase italic">ISO 9001:2015 Certified</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 bg-gray-50 overflow-hidden relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-sm uppercase tracking-wider text-secondary font-bold mb-2">Social Proof</h2>
+          <h3 class="text-4xl md:text-5xl font-extrabold text-primary mb-4">Voices of Excellence</h3>
+          <div class="w-24 h-1 bg-secondary mx-auto rounded"></div>
+          <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Hear from the parents and professionals who have experienced the transformative power of the Sri Narayani Center.</p>
+        </div>
+
+        <div class="relative h-[650px] mask-y">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Column 1: Professional Reviews -->
+            <div id="reviews-prof" class="relative overflow-y-auto h-[650px] scrollbar-hide">
+              <div class="flex flex-col gap-6 py-4">
+                <!-- Review List (Repeated twice for seamless loop) -->
+                <div class="flex flex-col gap-6">
+                  <!-- Mrs. Arti Khillan -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"I wanted to take a moment to express my heartfelt appreciation for the incredible sessions I had the privilege to attend. Sir, your dedication, knowledge, and passion for your subject are truly inspiring. Your ability to break down complex concepts into understandable, relatable segments is a testament to your skill as an educator."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">AK</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Arti Khillan</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Principal, Sagar Public School | CBSE Resource Person</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mr. Mathews K Thomas -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"Mr. Ravikanth's training sessions are meticulously designed to equip educators with innovative and practical ideas that can be seamlessly integrated into their classroom teaching. His interactive approach and real-world examples make complex concepts accessible and easy to understand."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">MT</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mr. Mathews K Thomas</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Founder – AI Educators Forum | CBSE Trainer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Abhilasha Verma -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"I want to express my heartfelt gratitude for your exceptional training sessions. Your ability to engage, inspire, and impart essential soft skills has made a significant impact. You've empowered us with tools and techniques that are already making a difference."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">AV</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Abhilasha Verma</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Headmistress (Primary), G B Public School, Tamil Nadu</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Jyoti Iyer -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"My journey with SNTTC has been nothing short of transformative. Each session was meticulously designed to provide in-depth insights into teaching methodologies. It's not just a course; it's a transformative experience that equips you with skills and confidence."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">JI</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Jyoti Iyer</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Resource Person & Regional Coordinator, Hyderabad</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mr. Ravindra -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"Mr. Ravindra has been making significant impacts in the educational community. His programs have been tailored to deliver engaging and informative sessions that resonate. His training has empowered educators to expand their teaching toolkit."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">RW</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">AI Educators Forum (Mr. Ravindra)</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Founder - AI Educators Forum | NCF Moderator</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeated Set for Loop (Exact Duplicate) -->
+                <div class="flex flex-col gap-6">
+                  <!-- Mrs. Arti Khillan -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"I wanted to take a moment to express my heartfelt appreciation for the incredible sessions I had the privilege to attend. Sir, your dedication, knowledge, and passion for your subject are truly inspiring. Your ability to break down complex concepts into understandable, relatable segments is a testament to your skill as an educator."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">AK</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Arti Khillan</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Principal, Sagar Public School</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mr. Mathews K Thomas -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"Mr. Ravikanth's training sessions are meticulously designed to equip educators with innovative and practical ideas that can be seamlessly integrated into their classroom teaching."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">MT</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mr. Mathews K Thomas</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Founder – AI Educators Forum</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Abhilasha Verma -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"I want to express my heartfelt gratitude for your exceptional training sessions. Your ability to engage, inspire, and impart essential soft skills has made a significant impact."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">AV</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Abhilasha Verma</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Headmistress, G B Public School</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Jyoti Iyer -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"My journey with SNTTC has been nothing short of transformative. Each session was meticulously designed to provide in-depth insights into teaching methodologies."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">JI</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Jyoti Iyer</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Resource Person, Hyderabad</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mr. Ravindra -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 italic text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm leading-relaxed">"Mr. Ravindra has been making significant impacts. HisPrograms have been tailored to deliver engaging and informative sessions."</p>
+                    <div class="flex items-center gap-3 not-italic">
+                      <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xs">RW</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">AI Educators Forum (Mr. Ravindra)</h4>
+                        <p class="text-[9px] text-gray-400 uppercase tracking-tighter">Founder - AI Educators Forum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2: Parent Testimonials -->
+            <div id="reviews-parent" class="relative overflow-y-auto h-[650px] hidden md:block border-l border-gray-200 pl-8 scrollbar-hide">
+              <div class="flex flex-col gap-6 py-4">
+                <!-- Review List (Repeated twice) -->
+                <div class="flex flex-col gap-6">
+                  <!-- Mrs. Prashansa Sahas -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"I appreciate the enthusiasm of all the children, and I also thank the effort of the people who made this possible for them. Thank you for the encouragement to one and all."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">PS</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Prashansa Sahas</h4>
+                        <p class="text-[10px] text-gray-400">Parent</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Prasanna -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"Thank you for your efforts to create something that allows us to learn joyfully. This session was used to educate children about meaningful communication."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">PR</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Prasanna</h4>
+                        <p class="text-[10px] text-gray-400">Yakshith & Sadhika's Mom</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Sunitha -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"The three-hour class that you spent with kids was a supportive, engaging and inclusive space of learning feels joyful and meaningful. Thank you so much for your valuable time."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">SM</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Sunitha</h4>
+                        <p class="text-[10px] text-gray-400">Vedhya Reddy's Mom</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Jyoti -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"My daughter absolutely loved this storytelling session! It was a fantastic blend of education with entertainment. The three hours flew by for her, and the children were excited and engaged."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">JM</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Jyoti</h4>
+                        <p class="text-[10px] text-gray-400">Udita's Mom</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Archana -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"I appreciate the work and effort you put with our children, as one of the learning steps with cultural development. These types of life skills activities are really great in the child growth."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">AM</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Archana</h4>
+                        <p class="text-[10px] text-gray-400">Shashwat's Mom</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Repeated Set for Loop (Exact Duplicate) -->
+                <div class="flex flex-col gap-6">
+                  <!-- Mrs. Prashansa Sahas -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"I appreciate the enthusiasm of all the children, and I also thank the effort of the people who made this possible for them."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">PS</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Prashansa Sahas</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Prasanna -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"Thank you for your efforts to create something that allows us to learn joyfully. This session was used to educate children about meaningful communication."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">PR</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Prasanna</h4>
+                        <p class="text-[10px] text-gray-400">Yakshith &amp; Sadhika's Mom</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Sunitha -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"The three-hour class that you spent with kids was a supportive, engaging and inclusive space of learning feels joyful and meaningful."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">SM</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Sunitha</h4>
+                        <p class="text-[10px] text-gray-400">Vedhya Reddy's Mom</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Jyoti -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"My daughter absolutely loved this storytelling session! It was a fantastic blend of education with entertainment."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">JM</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Jyoti</h4>
+                        <p class="text-[10px] text-gray-400">Udita's Mom</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mrs. Archana -->
+                  <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-gray-700">
+                    <div class="flex text-yellow-400 mb-3 text-xs">★★★★★</div>
+                    <p class="mb-4 text-sm italic">"I appreciate the work and effort you put with our children, as one of the learning steps with cultural development."</p>
+                    <div class="flex items-center gap-3">
+                      <div class="h-10 w-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-xs">AM</div>
+                      <div>
+                        <h4 class="font-bold text-primary text-xs">Mrs. Archana</h4>
+                        <p class="text-[10px] text-gray-400">Shashwat's Mom</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Fade Gradient -->
+          <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent z-10 pointer-events-none"></div>
+          <!-- Top Fade Gradient -->
+          <div class="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-gray-50 to-transparent z-10 pointer-events-none"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Page Copy Header -->
+    <header class="bg-primary text-textLight py-16 border-b-4 border-secondary">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto">Discover our mission, vision, and the driving force behind the Sri Narayani Center for Learning and Leadership.</p>
+      </div>
+    </header>
+
+    <!-- Founder Section -->
+        <section class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+              <div class="w-full md:w-1/2" data-aos="fade-right">
+                <img src="/images/image2.jpeg" alt="Mr. Ravikanth Perukulambil" class="w-full rounded-xl shadow-2xl object-cover h-96">
+              </div>
+              <div class="w-full md:w-1/2" data-aos="fade-left">
+                <h2 class="text-sm uppercase tracking-wider text-secondary font-bold mb-2">Our Founder</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold text-primary mb-4">Mr. Ravikanth Perukulambil</h3>
+                <div class="w-16 h-1 bg-secondary rounded mb-6"></div>
+                <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                  With a profound commitment to education and leadership, Mr. Ravikanth Perukulambil has dedicated his career to transforming learning environments. His experience in leadership roles has shaped a unique curriculum that not only imparts knowledge but builds character.
+                </p>
+                <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                  He believes that absolute dedication, combined with modern pedagogical strategies, can unlock the immense potential within every educator and professional.
+                </p>
+                <div class="bg-gray-50 border-l-4 border-secondary p-4 rounded-r-lg italic text-gray-600">
+                  "Education is not merely about transmitting facts; it's about igniting curiosity and empowering individuals to become leaders in their own right."
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Vision, Mission, Values -->
+        <section class="py-20 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Vision -->
+              <div class="card bg-white" data-aos="fade-up" data-aos-delay="0">
+                <div class="h-16 w-16 bg-primary text-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold text-center text-primary mb-4">Our Vision</h3>
+                <p class="text-gray-600 text-center flex-grow">To be a globally recognized center of excellence that revolutionizes education and shapes visionary leaders of tomorrow.</p>
+              </div>
+              <!-- Mission -->
+              <div class="card bg-white" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-16 w-16 bg-primary text-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold text-center text-primary mb-4">Our Mission</h3>
+                <p class="text-gray-600 text-center flex-grow">To nurture excellence in both education and the corporate world by shaping inspiring educators and empowering leaders with the tools to implement change effectively.</p>
+              </div>
+              <!-- Values -->
+              <div class="card bg-white" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-16 w-16 bg-primary text-secondary rounded-full flex items-center justify-center mb-6 mx-auto">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-bold text-center text-primary mb-4">Core Values</h3>
+                <p class="text-gray-600 text-center flex-grow">Integrity, Innovation, Inclusivity, and Excellence. We believe in nurturing talent and pushing boundaries.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+    
+
+    <!-- Our Expertise Sections -->
+    <section class="py-24 bg-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full -mr-32 -mt-32"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          
+          <!-- Teacher Training -->
+          <div data-aos="fade-right">
+            <h2 class="text-sm uppercase tracking-wider text-secondary font-bold mb-2">Educator Development</h2>
+            <h3 class="text-3xl md:text-4xl font-extrabold text-primary mb-6">Empowering Educators</h3>
+            <p class="text-gray-700 text-lg mb-8 leading-relaxed">
+              Our core strength lies in teacher training and professional development. We equip educators with modern pedagogical practices aligned with current world frameworks.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-secondary">
+                <h4 class="font-bold text-primary mb-1">Experiential Learning</h4>
+                <p class="text-xs text-gray-500 italic">Hands-on strategies.</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-secondary">
+                <h4 class="font-bold text-primary mb-1">Competency Based</h4>
+                <p class="text-xs text-gray-500 italic">Result-oriented methods.</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-secondary">
+                <h4 class="font-bold text-primary mb-1">Classroom Strategy</h4>
+                <p class="text-xs text-gray-500 italic">Engaging environments.</p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-secondary">
+                <h4 class="font-bold text-primary mb-1">Inclusive Methods</h4>
+                <p class="text-xs text-gray-500 italic">Effective frameworks.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corporate Training -->
+          <div data-aos="fade-left">
+            <h2 class="text-sm uppercase tracking-wider text-secondary font-bold mb-2">Corporate Excellence</h2>
+            <h3 class="text-3xl md:text-4xl font-extrabold text-primary mb-6">Empowering Professionals</h3>
+            <p class="text-gray-700 text-lg mb-8 leading-relaxed">
+              We specialize in corporate training designed to enhance workplace performance. Our training focus on essential skills required for the modern corporate world.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-gray-700 font-medium">
+                <span class="h-2 w-2 bg-secondary rounded-full"></span> Communication & Leadership
+              </li>
+              <li class="flex items-center gap-3 text-gray-700 font-medium">
+                <span class="h-2 w-2 bg-secondary rounded-full"></span> Emotional Intelligence
+              </li>
+              <li class="flex items-center gap-3 text-gray-700 font-medium">
+                <span class="h-2 w-2 bg-secondary rounded-full"></span> Team Building & Time Management
+              </li>
+              <li class="flex items-center gap-3 text-gray-700 font-medium">
+                <span class="h-2 w-2 bg-secondary rounded-full"></span> Organizational Effectiveness
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="py-20 bg-primary text-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
+        <h2 class="text-secondary font-bold tracking-widest uppercase mb-4">Our Methodology</h2>
+        <h3 class="text-4xl font-extrabold mb-8">Interactive, Activity-Driven & Learner-Centric</h3>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-12 italic">
+          "We emphasize real-world application, reflective practice, and continuous improvement, ensuring that participants not only gain knowledge but also develop the confidence to implement it effectively."
+        </p>
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="flex items-center gap-2">
+                <svg class="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Interactive Learning</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <svg class="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Activity-Driven</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <svg class="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span>Reflective Practice</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Courses Page Copy Header -->
+    <header class="bg-primary text-textLight py-16 border-b-4 border-secondary">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Courses</h1>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto">Explore high-quality, comprehensive programs designed to nurture skills and empower leaders.</p>
+      </div>
+    </header>
+
+    <!-- Courses Grid -->
+        <section class="py-20 bg-gray-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+              
+              <!-- Course 1 -->
+              <div class="card h-auto" data-aos="zoom-in" data-aos-delay="0">
+                <img src="/images/image2.jpeg" alt="Teacher Training" class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
+                <h3 class="text-xl font-bold text-primary mb-2">Teacher Training</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Comprehensive training tailored for modern educators to equip them with advanced teaching methodologies and classroom management skills.</p>
+                <div class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
+                  <p class="font-bold mb-2">Key Learning Points:</p>
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>Advanced pedagogical methodologies and teaching tools.</li>
+                    <li>Effective classroom management and student engagement techniques.</li>
+                    <li>Child psychology and behavioral management strategies.</li>
+                    <li>Comprehensive lesson planning and curriculum development.</li>
+                    <li>Modern assessment and feedback methodologies.</li>
+                  </ul>
+                </div>
+                <button class="toggle-btn text-accent font-semibold hover:text-primary transition mt-4 w-fit flex items-center">
+                  View More <svg class="w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20the%20Teacher%20Training%20course" target="_blank" class="mt-4 bg-secondary text-primary font-semibold py-2 px-4 rounded text-center hover:bg-yellow-400 transition">Enquire Now</a>
+              </div>
+    
+              <!-- Course 2 -->
+              <div class="card h-auto" data-aos="zoom-in" data-aos-delay="100">
+                <img src="/images/image3.jpeg" alt="Professional Training" class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
+                <h3 class="text-xl font-bold text-primary mb-2">Professional Training</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Skill enhancement courses designed for professionals looking to step up into leadership roles and manage teams effectively.</p>
+                <div class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
+                  <p class="font-bold mb-2">Key Learning Points:</p>
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>Leadership and team management excellence.</li>
+                    <li>Professional communication and public speaking skills.</li>
+                    <li>Strategic problem-solving and critical thinking.</li>
+                    <li>Emotional intelligence and relationship building.</li>
+                    <li>Time management and professional productivity.</li>
+                  </ul>
+                </div>
+                <button class="toggle-btn text-accent font-semibold hover:text-primary transition mt-4 w-fit flex items-center">
+                  View More <svg class="w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20the%20Professional%20Training%20course" target="_blank" class="mt-4 bg-secondary text-primary font-semibold py-2 px-4 rounded text-center hover:bg-yellow-400 transition">Enquire Now</a>
+              </div>
+    
+              <!-- Course 3 -->
+              <div class="card h-auto" data-aos="zoom-in" data-aos-delay="200">
+                <img src="/images/image4.jpeg" alt="Reading Program" class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
+                <h3 class="text-xl font-bold text-primary mb-2">Reading Program</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Specialized techniques aimed at improving reading speed, deep comprehension, and expanding vocabulary.</p>
+                <div class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
+                  <p class="font-bold mb-2">Key Learning Points:</p>
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>Phonics foundation and vocabulary expansion.</li>
+                    <li>Techniques for improving reading speed and fluency.</li>
+                    <li>Deep comprehension and contextual understanding.</li>
+                    <li>Building confidence and a love for reading.</li>
+                    <li>Strategies for overcoming reading difficulties.</li>
+                  </ul>
+                </div>
+                <button class="toggle-btn text-accent font-semibold hover:text-primary transition mt-4 w-fit flex items-center">
+                  View More <svg class="w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20the%20Reading%20Program" target="_blank" class="mt-4 bg-secondary text-primary font-semibold py-2 px-4 rounded text-center hover:bg-yellow-400 transition">Enquire Now</a>
+              </div>
+    
+              <!-- Course 4 -->
+              <div class="card" data-aos="zoom-in" data-aos-delay="0">
+                <img src="/images/image1.jpeg" alt="Handwriting Program" class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
+                <h3 class="text-xl font-bold text-primary mb-2">Handwriting Program</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Transform your handwriting. From basic legibility to elegant cursive writing, guided by experts.</p>
+                <div class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
+                  <p class="font-bold mb-2">Key Learning Points:</p>
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>Correction of grip, posture, and paper positioning.</li>
+                    <li>Techniques for consistent letter formation and spacing.</li>
+                    <li>Enhancing both legibility and writing speed.</li>
+                    <li>Mastering both cursive and print writing styles.</li>
+                    <li>Exercises for developing fine motor skills.</li>
+                  </ul>
+                </div>
+                <button class="toggle-btn text-accent font-semibold hover:text-primary transition mt-4 w-fit flex items-center">
+                  View More <svg class="w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20the%20Handwriting%20Program" target="_blank" class="mt-4 bg-secondary text-primary font-semibold py-2 px-4 rounded text-center hover:bg-yellow-400 transition">Enquire Now</a>
+              </div>
+    
+              <!-- Course 5 -->
+              <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="/images/image2.jpeg" alt="Storytelling & Fun Activities" class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
+                <h3 class="text-xl font-bold text-primary mb-2">Storytelling & Activities</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Interactive sessions focused on fostering creativity, building imagination, and improving verbal expression.</p>
+                <div class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
+                  <p class="font-bold mb-2">Key Learning Points:</p>
+                  <ul class="list-disc ml-5 space-y-1">
+                    <li>Creative imagination and narrative building.</li>
+                    <li>Voice modulation, tone, and expression skills.</li>
+                    <li>Confidence building via role-play and drama.</li>
+                    <li>Enhancing verbal and non-verbal communication.</li>
+                    <li>Interactive and engaging group learning activities.</li>
+                  </ul>
+                </div>
+                <button class="toggle-btn text-accent font-semibold hover:text-primary transition mt-4 w-fit flex items-center">
+                  View More <svg class="w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20the%20Storytelling%20Program" target="_blank" class="mt-4 bg-secondary text-primary font-semibold py-2 px-4 rounded text-center hover:bg-yellow-400 transition">Enquire Now</a>
+              </div>
+    
+            </div>
+          </div>
+        </section>
+    
+    
+
+    <!-- Contact Page Copy Header -->
+    <header class="bg-primary text-textLight py-16 border-b-4 border-secondary">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto">We'd love to hear from you. Get in touch to discuss courses, enrollments, or any other inquiries.</p>
+      </div>
+    </header>
+
+    <!-- Contact Details & Form -->
+        <section class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+              
+              <!-- Contact Details -->
+              <div data-aos="fade-right">
+                <h2 class="text-3xl font-bold text-primary mb-6">Get In Touch</h2>
+                <p class="text-gray-600 mb-8">Reach out to us via phone, email, or simply drop by our center. For the fastest response, send us a message on WhatsApp!</p>
+                
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <div class="h-12 w-12 bg-secondary text-primary rounded-full flex items-center justify-center shrink-0">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-bold text-gray-800">Phone & WhatsApp</h4>
+                      <p class="text-gray-600 mt-1">+91 9908925730</p>
+                      <a href="https://wa.me/919908925730" target="_blank" class="text-accent hover:text-primary font-medium text-sm mt-1 inline-block">Message on WhatsApp &rarr;</a>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start">
+                    <div class="h-12 w-12 bg-secondary text-primary rounded-full flex items-center justify-center shrink-0">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-bold text-gray-800">Email</h4>
+                      <p class="text-gray-600 mt-1">anandghana.ravi@gmail.com</p>
+                    </div>
+                  </div>
+    
+                  <div class="flex items-start">
+                    <div class="h-12 w-12 bg-secondary text-primary rounded-full flex items-center justify-center shrink-0">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-bold text-gray-800">Address</h4>
+                      <p class="text-gray-600 mt-1 leading-relaxed">Door No 1-6-11, First Floor, Phanigiri Colony, Chaitanyapuri, Hyderabad, 500060</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Map Placeholder -->
+                <div class="mt-10 rounded-xl overflow-hidden shadow-lg border border-gray-200">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15229.414777598687!2d78.5350355!3d17.3712395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98f26dd7fcd5%3A0x600f1c97a8e2cb70!2sChaitanyapuri%2C%20Dilsukhnagar%2C%20Hyderabad%2C%20Telangana%20500060!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+    
+              <!-- Contact Form -->
+              <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-100" data-aos="fade-left">
+                <h3 class="text-2xl font-bold text-primary mb-6">Send us a Message</h3>
+                <form action="#" method="POST" class="space-y-6">
+                  <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring focus:ring-accent focus:ring-opacity-50 transition" placeholder="John Doe" required>
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring focus:ring-accent focus:ring-opacity-50 transition" placeholder="+91 XXXXX XXXXX" required>
+                  </div>
+                  <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring focus:ring-accent focus:ring-opacity-50 transition" placeholder="How can we help you?" required></textarea>
+                  </div>
+                  <button type="submit" class="w-full btn-primary text-center justify-center flex">Send Message</button>
+                </form>
+              </div>
+    
+            </div>
+          </div>
+        </section>
+    
+    
+
+    <!-- CTA Banner -->
+    <section class="py-16 bg-secondary text-primary">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between" data-aos="fade-up">
+        <div class="mb-6 md:mb-0 text-center md:text-left">
+          <h3 class="text-2xl md:text-3xl font-bold mb-2">Ready to start your journey?</h3>
+          <p class="text-lg font-medium opacity-90">Contact us directly on WhatsApp to learn more and enroll.</p>
+        </div>
+        <div>
+          <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20your%20courses" target="_blank" class="bg-primary text-textLight font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-900 transition flex items-center transform hover:scale-105">
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.601.725 4.914 2.038 1.314 1.314 2.036 3.06 2.036 4.914-.001 3.824-3.113 6.928-6.95 6.928z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#051025] text-gray-400 py-20 border-t-2 border-secondary/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          
+          <!-- Column 1: Branding -->
+          <div class="space-y-6">
+            <div class="flex items-center gap-3">
+              <img src="/images/logo.jpeg" alt="Logo" class="h-16 w-16 rounded-full border-2 border-secondary shadow-lg" />
+              <div class="flex flex-col text-left">
+                <span class="text-xl font-bold text-white leading-tight">Sri Narayani Center</span>
+                <span class="text-[10px] font-bold text-secondary tracking-widest uppercase">For Learning & Leadership</span>
+              </div>
+            </div>
+            <p class="text-sm leading-relaxed text-left">
+              Empowering the next generation of educators and leaders through world-class training, innovation, and absolute dedication.
+            </p>
+            <div class="flex gap-4">
+              <a href="https://www.instagram.com/srinarayani_2024?utm_source=qr&igsh=dGU3dnYyMjFzZ3Nt" target="_blank" class="footer-social-icon">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="footer-social-icon">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" class="footer-social-icon">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.58c-1.14 0-2.06-.93-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.13-.92 2.06-2.06 2.06zM20.45 20.45h-3.56v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96v5.7h-3.56V9h3.42v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Explore -->
+          <div>
+            <h4 class="text-white font-bold text-lg mb-6 flex items-center gap-2">
+              Explore
+              <span class="w-8 h-0.5 bg-secondary rounded-full"></span>
+            </h4>
+            <ul class="space-y-4 text-sm text-left">
+              <li><a href="/index.html" class="hover:text-secondary transition-all flex items-center group"><span class="mr-2 group-hover:translate-x-1 transition-transform font-bold text-secondary">→</span> Home</a></li>
+              <li><a href="/about.html" class="hover:text-secondary transition-all flex items-center group"><span class="mr-2 group-hover:translate-x-1 transition-transform font-bold text-secondary">→</span> About Us</a></li>
+              <li><a href="/courses.html" class="hover:text-secondary transition-all flex items-center group"><span class="mr-2 group-hover:translate-x-1 transition-transform font-bold text-secondary">→</span> Our Courses</a></li>
+              <li><a href="/contact.html" class="hover:text-secondary transition-all flex items-center group"><span class="mr-2 group-hover:translate-x-1 transition-transform font-bold text-secondary">→</span> Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact -->
+          <div>
+            <h4 class="text-white font-bold text-lg mb-6 flex items-center gap-2">
+              Get in Touch
+              <span class="w-8 h-0.5 bg-secondary rounded-full"></span>
+            </h4>
+            <ul class="space-y-4 text-sm text-left">
+              <li class="flex items-start gap-3">
+                <svg class="h-5 w-5 text-secondary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                <span>+91 9908925730</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="h-5 w-5 text-secondary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <span class="break-all">anandghana.ravi@gmail.com</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="h-5 w-5 text-secondary mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <span>Door No 1-6-11, First Floor, Phanigiri Colony, Hyderabad, 500060</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Certification -->
+          <div>
+            <h4 class="text-white font-bold text-lg mb-6 flex items-center gap-2">
+              Accreditation
+              <span class="w-8 h-0.5 bg-secondary rounded-full"></span>
+            </h4>
+            <div class="bg-white/5 border border-white/10 p-4 rounded-xl flex flex-col items-center text-center gap-3">
+              <img src="/images/ISO-certified.jpeg" alt="ISO 9001:2015" class="h-20 w-auto rounded shadow-lg border border-white/20" />
+              <div>
+                <p class="text-[10px] uppercase font-bold text-secondary mb-1">ISO Certified 9001:2015</p>
+                <p class="text-[11px] text-gray-500 leading-tight">Setting world-class standards in educational excellence.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px]">
+          <p>&copy; <span id="year"></span> Sri Narayani Center. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="hover:text-white transition">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20your%20courses" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.601.725 4.914 2.038 1.314 1.314 2.036 3.06 2.036 4.914-.001 3.824-3.113 6.928-6.95 6.928z"/></svg>
+    </a>
+
+    <script>
+      // Auto-scroll logic for Reviews
+      function setupAutoScroll(containerId, speed = 0.5) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        let isInteracting = false;
+        
+        // Pause on interaction
+        const pause = () => isInteracting = true;
+        const resume = () => isInteracting = false;
+
+        container.addEventListener('mouseenter', pause);
+        container.addEventListener('mouseleave', resume);
+        container.addEventListener('touchstart', pause);
+        container.addEventListener('touchend', resume);
+        container.addEventListener('mousedown', pause);
+        
+        function step() {
+          if (!isInteracting) {
+            container.scrollTop += speed;
+            
+            // Loop scroll: If at halfway (since content is duplicated), reset to top
+            // Added a small buffer (-1) for sub-pixel/rounding reliability
+            if (container.scrollTop >= (container.scrollHeight / 2) - 1) {
+              container.scrollTop = 0;
+            }
+          }
+          requestAnimationFrame(step);
+        }
+        
+        requestAnimationFrame(step);
+      }
+
+      setupAutoScroll('reviews-prof', 0.8);
+      setupAutoScroll('reviews-parent', 0.6);
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Course "View More" functionality
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggleBtns = document.querySelectorAll('.toggle-btn');
+        toggleBtns.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const card = e.currentTarget.closest('.card');
+            const content = card.querySelector('.hidden-content');
+            const svg = e.currentTarget.querySelector('svg');
+            
+            if (content.classList.contains('hidden')) {
+              content.classList.remove('hidden');
+              e.currentTarget.innerHTML = 'View Less <svg class="w-4 h-4 ml-1 transform rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>';
+            } else {
+              content.classList.add('hidden');
+              e.currentTarget.innerHTML = 'View More <svg class="w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>';
+            }
+          });
+        });
+      });
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
