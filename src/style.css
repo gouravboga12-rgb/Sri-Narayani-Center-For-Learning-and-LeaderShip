@@ -60,6 +60,44 @@
   mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
 }
 
+/* Typewriter Effect */
+.typewriter-container {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 3px solid #EAB308;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #EAB308 }
+}
+
+/* Floating Animation for Buttons */
+@keyframes float-up {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-float-up {
+  animation: float-up 0.8s ease-out forwards;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
 
 /* Floating WhatsApp Pulse Animation */
 @keyframes pulse-ring {
