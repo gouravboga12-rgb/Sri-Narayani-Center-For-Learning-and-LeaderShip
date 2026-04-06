@@ -427,7 +427,7 @@
         btn.addEventListener('click', function () {
           const card = this.closest('.card');
           const hiddenContent = card.querySelector('.hidden-content');
-          const shortText = card.querySelector('p.line-clamp-4');
+          const shortText = hiddenContent ? hiddenContent.previousElementSibling : null;
 
           if (shortText && hiddenContent) {
             if (hiddenContent.classList.contains('hidden')) {
