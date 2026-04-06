@@ -103,6 +103,52 @@
   animation: none;
 }
 
+/* Typewriter Cursor */
+.typewriter-cursor::after {
+  content: '|';
+  animation: blink 0.75s step-end infinite;
+  @apply text-secondary ml-1;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Global Hover/Touch Interactivity */
+/* Apply to cards, buttons, and links for a "live" feel */
+.card, .btn-primary, .btn-outline, .footer-social-icon, a:not(.no-anim) {
+  @apply transition-all duration-300;
+}
+
+.card:hover, .card:active {
+  @apply transform -translate-y-2 shadow-2xl border-secondary/30;
+}
+
+.btn-primary:hover, .btn-primary:active {
+  @apply transform -translate-y-1 scale-105 shadow-lg bg-yellow-400;
+}
+
+.btn-outline:hover, .btn-outline:active {
+  @apply transform -translate-y-1 scale-105 shadow-md bg-secondary text-primary;
+}
+
+/* Simple Animation for Hero Buttons on Load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
 /* Utilities */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

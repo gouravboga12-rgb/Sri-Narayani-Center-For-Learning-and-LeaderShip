@@ -5,12 +5,31 @@ import './style.css';
 // Initialize Animate On Scroll
 AOS.init({
   duration: 800,
-  easing: 'slide',
+  easing: 'ease-in-out',
   once: true,
   offset: 100,
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+// Typewriter Effect Function
+async function typeSentence(elementId, text, speed = 50) {
+  const element = document.getElementById(elementId);
+  if (!element) return;
+  
+  element.classList.add('typewriter-cursor');
+  for (let i = 0; i < text.length; i++) {
+    element.textContent += text.charAt(i);
+    await new Promise(resolve => setTimeout(resolve, speed));
+  }
+  element.classList.remove('typewriter-cursor');
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  // Start Hero Animations
+  if (document.getElementById('hero-title')) {
+    await typeSentence('hero-title', 'From Classrooms to Board Rooms', 80);
+    await typeSentence('hero-subtitle', 'World-class training programs designed to enhance skills, build confidence, and foster lifelong learning.', 40);
+  }
+
   // Mobile menu functionality
   const btn = document.getElementById('mobile-menu-btn');
   const menu = document.getElementById('mobile-menu');
