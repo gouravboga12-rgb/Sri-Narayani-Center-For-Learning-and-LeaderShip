@@ -14,25 +14,40 @@
   <nav class="bg-primary text-textLight sticky top-0 z-50 shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       <div class="flex items-center justify-between h-20">
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1">
           <img src="/images/logo.jpeg" alt="Sri Narayani Center Logo"
             class="h-12 w-12 md:h-14 md:w-14 rounded-full object-cover border-2 border-secondary shadow-md" />
           <a href="/" class="flex flex-col justify-center">
             <span
-              class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-extrabold tracking-tight text-white drop-shadow-sm whitespace-nowrap">Sri
+              class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg font-extrabold tracking-tight text-white drop-shadow-sm whitespace-nowrap">Sri
               Narayani Center for Learning and Leadership</span>
           </a>
         </div>
-        <div class="hidden xl:block">
-          <div class="ml-4 flex items-baseline space-x-2 xl:space-x-6 shrink-0">
-            <a href="/index.html" class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Home</a>
+        <div class="hidden xl:block ml-auto">
+          <div class="ml-4 flex items-baseline space-x-2 xl:space-x-4 shrink-0">
+            <a href="/index.html"
+              class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Home</a>
             <a href="/about.html" class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">About</a>
             <a href="/courses.html" class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Courses</a>
-            <a href="/participant-testimonials.html"
-              class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Participants
-              Testimonials</a>
-            <a href="/parent-testimonials.html"
-              class="text-secondary font-semibold hover:text-yellow-400 px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Parents Testimonials</a>
+            <div class="relative">
+              <button id="testimonials-btn"
+                class="flex items-center text-secondary font-semibold hover:text-yellow-400 px-2 py-2 rounded-md transition text-sm xl:text-sm font-medium whitespace-nowrap group">
+                Testimonials
+                <svg id="testimonials-arrow" class="ml-1 h-4 w-4 transition-transform duration-200" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="testimonials-dropdown"
+                class="hidden absolute left-0 mt-2 w-56 bg-primary rounded-md shadow-xl py-2 z-50 border border-blue-900/50 backdrop-blur-sm">
+                <a href="/participant-testimonials.html"
+                  class="block px-4 py-2 text-sm hover:bg-accent hover:text-secondary transition-colors">Participants
+                  Testimonials</a>
+                <a href="/parent-testimonials.html"
+                  class="block px-4 py-2 text-sm hover:bg-accent hover:text-secondary transition-colors text-secondary font-semibold">Parents
+                  Testimonials</a>
+              </div>
+            </div>
             <a href="/contact.html" class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Contact</a>
           </div>
         </div>
@@ -52,10 +67,23 @@
         <a href="/index.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Home</a>
         <a href="/about.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">About</a>
         <a href="/courses.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Courses</a>
-        <a href="/participant-testimonials.html"
-          class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Participants Testimonials</a>
-        <a href="/parent-testimonials.html"
-          class="text-secondary block px-3 py-2 rounded-md text-base font-medium">Parents Testimonials</a>
+        <div class="space-y-1">
+          <button id="mobile-testimonials-btn"
+            class="w-full flex items-center justify-between hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">
+            Testimonials
+            <svg id="mobile-testimonials-arrow" class="h-5 w-5 transition-transform duration-200" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="mobile-testimonials-dropdown" class="hidden pl-4 space-y-1">
+            <a href="/participant-testimonials.html"
+              class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Participants
+              Testimonials</a>
+            <a href="/parent-testimonials.html"
+              class="text-secondary block px-3 py-2 rounded-md text-base font-medium font-semibold">Parents Testimonials</a>
+          </div>
+        </div>
         <a href="/contact.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
       </div>
     </div>
@@ -420,6 +448,8 @@
 </body>
 
 </html>
+
+
 
 
 

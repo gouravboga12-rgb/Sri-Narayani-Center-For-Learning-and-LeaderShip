@@ -14,25 +14,40 @@
   <nav class="bg-primary text-textLight sticky top-0 z-50 shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
       <div class="flex items-center justify-between h-20">
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1">
           <img src="/images/logo.jpeg" alt="Sri Narayani Center Logo"
             class="h-12 w-12 md:h-14 md:w-14 rounded-full object-cover border-2 border-secondary shadow-md" />
           <a href="/" class="flex flex-col justify-center">
             <span
-              class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-extrabold tracking-tight text-white drop-shadow-sm whitespace-nowrap">Sri
+              class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg font-extrabold tracking-tight text-white drop-shadow-sm whitespace-nowrap">Sri
               Narayani Center for Learning and Leadership</span>
           </a>
         </div>
-        <div class="hidden xl:block">
-          <div class="ml-4 flex items-baseline space-x-2 xl:space-x-6 shrink-0">
-            <a href="/index.html" class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Home</a>
+        <div class="hidden xl:block ml-auto">
+          <div class="ml-4 flex items-baseline space-x-2 xl:space-x-4 shrink-0">
+            <a href="/index.html"
+              class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Home</a>
             <a href="/about.html" class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">About</a>
-            <a href="/courses.html"
-              class="text-secondary font-semibold hover:text-yellow-400 px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Courses</a>
-            <a href="/participant-testimonials.html"
-              class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Participants Testimonials</a>
-            <a href="/parent-testimonials.html"
-              class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Parents Testimonials</a>
+            <a href="/courses.html" class="text-secondary font-semibold hover:text-yellow-400 px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Courses</a>
+            <div class="relative">
+              <button id="testimonials-btn"
+                class="flex items-center hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-sm font-medium whitespace-nowrap group">
+                Testimonials
+                <svg id="testimonials-arrow" class="ml-1 h-4 w-4 transition-transform duration-200" fill="none"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="testimonials-dropdown"
+                class="hidden absolute left-0 mt-2 w-56 bg-primary rounded-md shadow-xl py-2 z-50 border border-blue-900/50 backdrop-blur-sm">
+                <a href="/participant-testimonials.html"
+                  class="block px-4 py-2 text-sm hover:bg-accent hover:text-secondary transition-colors">Participants
+                  Testimonials</a>
+                <a href="/parent-testimonials.html"
+                  class="block px-4 py-2 text-sm hover:bg-accent hover:text-secondary transition-colors">Parents
+                  Testimonials</a>
+              </div>
+            </div>
             <a href="/contact.html" class="hover:text-secondary px-2 py-2 rounded-md transition text-sm xl:text-base font-medium whitespace-nowrap">Contact</a>
           </div>
         </div>
@@ -52,10 +67,23 @@
         <a href="/index.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Home</a>
         <a href="/about.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">About</a>
         <a href="/courses.html" class="text-secondary block px-3 py-2 rounded-md text-base font-medium">Courses</a>
-        <a href="/participant-testimonials.html"
-          class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Participants Testimonials</a>
-        <a href="/parent-testimonials.html"
-          class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Parents Testimonials</a>
+        <div class="space-y-1">
+          <button id="mobile-testimonials-btn"
+            class="w-full flex items-center justify-between hover:text-secondary block px-3 py-2 rounded-md text-base font-medium transition-colors">
+            Testimonials
+            <svg id="mobile-testimonials-arrow" class="h-5 w-5 transition-transform duration-200" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="mobile-testimonials-dropdown" class="hidden pl-4 space-y-1">
+            <a href="/participant-testimonials.html"
+              class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Participants
+              Testimonials</a>
+            <a href="/parent-testimonials.html"
+              class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Parents Testimonials</a>
+          </div>
+        </div>
         <a href="/contact.html" class="hover:text-secondary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
       </div>
     </div>
@@ -76,11 +104,11 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
 
         <!-- Course 1 -->
-        <div class="card h-auto" data-aos="zoom-in" data-aos-delay="0">
-          <img src="/images/image2.jpeg" alt="Teacher Training"
+        <div class="card" data-aos="zoom-in" data-aos-delay="0">
+          <img src="/images/image4.jpeg" alt="Teacher Training"
             class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
-          <h3 class="text-xl font-bold text-primary mb-2">Teacher Training</h3>
-          <p class="text-gray-600 mb-4 flex-grow">Comprehensive training tailored for modern educators to equip them
+          <h3 class="text-xl font-bold text-primary mb-2 min-h-[3.5rem]">Teacher Training</h3>
+          <p class="text-gray-600 mb-4 flex-grow min-h-[5.5rem]">Comprehensive training tailored for modern educators to equip them
             with advanced teaching methodologies and classroom management skills.</p>
           <div
             class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
@@ -107,11 +135,11 @@
         </div>
 
         <!-- Course 2 -->
-        <div class="card h-auto" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
           <img src="/images/image3.jpeg" alt="Professional Training for Corporates"
             class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
-          <h3 class="text-xl font-bold text-primary mb-2">Professional Training for Corporates</h3>
-          <p class="text-gray-600 mb-4 flex-grow">Skill enhancement courses designed for professionals looking to step up into leadership roles and manage teams effectively.</p>
+          <h3 class="text-xl font-bold text-primary mb-2 min-h-[3.5rem]">Professional Training for Corporates</h3>
+          <p class="text-gray-600 mb-4 flex-grow min-h-[5.5rem]">Skill enhancement courses designed for professionals looking to step up into leadership roles and manage teams effectively.</p>
           <div
             class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
             <p class="font-bold mb-2">Key Learning Points:</p>
@@ -137,11 +165,11 @@
         </div>
 
         <!-- Course 3 -->
-        <div class="card h-auto" data-aos="zoom-in" data-aos-delay="200">
-          <img src="/images/image4.jpeg" alt="Reading program for the students struggling in reading skills"
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="/images/Reading program image 3.jpg" alt="Reading program for the students struggling in reading skills"
             class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
-          <h3 class="text-xl font-bold text-primary mb-2">Reading program for the students struggling in reading skills</h3>
-          <p class="text-gray-600 mb-4 flex-grow">Specialized techniques aimed at improving reading speed, deep comprehension, and expanding vocabulary.</p>
+          <h3 class="text-xl font-bold text-primary mb-2 min-h-[3.5rem]">Reading program for the students struggling in reading skills</h3>
+          <p class="text-gray-600 mb-4 flex-grow min-h-[5.5rem]">Specialized techniques aimed at improving reading speed, deep comprehension, and expanding vocabulary.</p>
           <div
             class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
             <p class="font-bold mb-2">Key Learning Points:</p>
@@ -167,11 +195,11 @@
         </div>
 
         <!-- Course 4 -->
-        <div class="card h-auto" data-aos="zoom-in" data-aos-delay="0">
-          <img src="/images/image1.jpeg" alt="Handwriting program for the students struggling in handwriting"
+        <div class="card" data-aos="zoom-in" data-aos-delay="0">
+          <img src="/images/Handwriting program image 4.jpg" alt="Handwriting program for the students struggling in handwriting"
             class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
-          <h3 class="text-xl font-bold text-primary mb-2">Handwriting program for the students struggling in handwriting</h3>
-          <p class="text-gray-600 mb-4 flex-grow">Transform your handwriting. From basic legibility to elegant cursive writing, guided by experts.</p>
+          <h3 class="text-xl font-bold text-primary mb-2 min-h-[3.5rem]">Handwriting program for the students struggling in handwriting</h3>
+          <p class="text-gray-600 mb-4 flex-grow min-h-[5.5rem]">Transform your handwriting. From basic legibility to elegant cursive writing, guided by experts.</p>
           <div
             class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
             <p class="font-bold mb-2">Key Learning Points:</p>
@@ -197,11 +225,11 @@
         </div>
 
         <!-- Course 5 -->
-        <div class="card h-auto" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
           <img src="/images/image2.jpeg" alt="Weekend Storytelling and fun activities for children"
             class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
-          <h3 class="text-xl font-bold text-primary mb-2">Weekend Storytelling and fun activities for children.</h3>
-          <p class="text-gray-600 mb-4 flex-grow">Interactive sessions focused on fostering creativity, building imagination, and improving verbal expression.</p>
+          <h3 class="text-xl font-bold text-primary mb-2 min-h-[3.5rem]">Weekend Storytelling and fun activities for children.</h3>
+          <p class="text-gray-600 mb-4 flex-grow min-h-[5.5rem]">Interactive sessions focused on fostering creativity, building imagination, and improving verbal expression.</p>
           <div
             class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
             <p class="font-bold mb-2">Key Learning Points:</p>
@@ -226,6 +254,96 @@
             Now</a>
         </div>
 
+        <!-- Course 6 -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+          <img src="/images/train-the-trainer.png" alt="Train The Trainer Certification Course"
+            class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
+          <h3 class="text-xl font-bold text-primary mb-2 min-h-[3.5rem]">Train The Trainer Certification Course</h3>
+          <p class="text-gray-600 mb-4 flex-grow min-h-[5.5rem]">Master the art of teaching adults with advanced facilitation techniques and instructional design strategies.</p>
+          <div
+            class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
+            <p class="font-bold mb-2">Key Learning Points:</p>
+            <ul class="list-disc ml-5 space-y-1">
+              <li>Understanding adult learning principles and styles.</li>
+              <li>Designing effective training modules and instructional materials.</li>
+              <li>Mastering presentation and public speaking techniques.</li>
+              <li>Facilitation skills for managing group dynamics.</li>
+              <li>Methods for evaluating training effectiveness and impact.</li>
+            </ul>
+          </div>
+          <button
+            class="toggle-btn text-accent font-semibold hover:text-primary transition mt-4 w-fit flex items-center">
+            View More <svg class="w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20the%20Train%20The%20Trainer%20Certification%20course"
+            target="_blank"
+            class="mt-4 bg-secondary text-primary font-semibold py-2 px-4 rounded text-center hover:bg-yellow-400 transition">Enquire
+            Now</a>
+        </div>
+
+        <!-- Course 7 -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="0">
+          <img src="/images/soft-skills-training.webp" alt="Softskills Trainer Certification Course"
+            class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
+          <h3 class="text-xl font-bold text-primary mb-2 min-h-[3.5rem]">Softskills Trainer Certification Course</h3>
+          <p class="text-gray-600 mb-4 flex-grow min-h-[5.5rem]">Become a certified soft skills expert, empowering others with essential interpersonal and leadership abilities.</p>
+          <div
+            class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
+            <p class="font-bold mb-2">Key Learning Points:</p>
+            <ul class="list-disc ml-5 space-y-1">
+              <li>Effective communication and interpersonal skill development.</li>
+              <li>Techniques for training emotional intelligence and empathy.</li>
+              <li>Time management and organizational skill-building workshops.</li>
+              <li>Coaching for conflict resolution and negotiation skills.</li>
+              <li>Strategies for fostering workplace leadership and teamwork.</li>
+            </ul>
+          </div>
+          <button
+            class="toggle-btn text-accent font-semibold hover:text-primary transition mt-4 w-fit flex items-center">
+            View More <svg class="w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20the%20Softskills%20Trainer%20Certification%20course"
+            target="_blank"
+            class="mt-4 bg-secondary text-primary font-semibold py-2 px-4 rounded text-center hover:bg-yellow-400 transition">Enquire
+            Now</a>
+        </div>
+
+        <!-- Course 8 -->
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+          <img src="/images/master-trainer-premium.png" alt="Master Trainer Certification Course"
+            class="w-full h-48 object-cover rounded-md mb-4 bg-gray-200">
+          <h3 class="text-xl font-bold text-primary mb-2 min-h-[3.5rem]">Master Trainer Certification Course</h3>
+          <p class="text-gray-600 mb-4 flex-grow min-h-[5.5rem]">The pinnacle of trainer development, focusing on high-level organizational transformation and mentor leadership.</p>
+          <div
+            class="hidden-content hidden text-gray-600 text-sm mt-2 pt-4 border-t border-gray-100 flex-grow text-left">
+            <p class="font-bold mb-2">Key Learning Points:</p>
+            <ul class="list-disc ml-5 space-y-1">
+              <li>Advanced instructional design and curriculum architecture.</li>
+              <li>Mastery in high-level facilitation and executive coaching.</li>
+              <li>Specialized techniques for training large diverse audiences.</li>
+              <li>Strategizing organizational development and transformation.</li>
+              <li>Mentoring and developing other trainers to excellence.</li>
+            </ul>
+          </div>
+          <button
+            class="toggle-btn text-accent font-semibold hover:text-primary transition mt-4 w-fit flex items-center">
+            View More <svg class="w-4 h-4 ml-1 transform transition-transform" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <a href="https://wa.me/919908925730?text=Hello%20I%20am%20interested%20in%20the%20Master%20Trainer%20Certification%20course"
+            target="_blank"
+            class="mt-4 bg-secondary text-primary font-semibold py-2 px-4 rounded text-center hover:bg-yellow-400 transition">Enquire
+            Now</a>
+        </div>
+
         </div>
 
         <!-- Still expanding -->
@@ -245,7 +363,7 @@
 
         <!-- Column 1: Branding -->
         <div class="space-y-6">
-          <div class="flex items-center gap-3">
+          <div class="flex items-center gap-1">
             <img src="/images/logo.jpeg" alt="Logo"
               class="h-16 w-16 rounded-full border-2 border-secondary shadow-lg" />
             <div class="flex flex-col text-left">
@@ -409,6 +527,8 @@
 </body>
 
 </html>
+
+
 
 
 

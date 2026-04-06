@@ -22,7 +22,7 @@
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 p-6 flex flex-col h-full;
+    @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 p-6 flex flex-col;
   }
 
   .footer-social-icon {
