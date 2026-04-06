@@ -8,7 +8,9 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about.html'),
         courses: resolve(__dirname, 'courses.html'),
-        contact: resolve(__dirname, 'contact.html')
+        contact: resolve(__dirname, 'contact.html'),
+        participantTestimonials: resolve(__dirname, 'participant-testimonials.html'),
+        parentTestimonials: resolve(__dirname, 'parent-testimonials.html')
       }
     }
   }
