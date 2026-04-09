@@ -16,6 +16,7 @@ async function typeSentence(elementId, text, speed = 50) {
   if (!element) return;
   
   element.classList.add('typewriter-cursor');
+  element.textContent = ''; // Clear existing static text (for SEO) before typing
   for (let i = 0; i < text.length; i++) {
     element.textContent += text.charAt(i);
     await new Promise(resolve => setTimeout(resolve, speed));
