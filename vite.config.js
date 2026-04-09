@@ -10,7 +10,8 @@ export default defineConfig({
         courses: resolve(__dirname, 'courses.html'),
         contact: resolve(__dirname, 'contact.html'),
         participantTestimonials: resolve(__dirname, 'participant-testimonials.html'),
-        parentTestimonials: resolve(__dirname, 'parent-testimonials.html')
+        parentTestimonials: resolve(__dirname, 'parent-testimonials.html'),
+        team: resolve(__dirname, 'team.html')
       }
     }
   }
