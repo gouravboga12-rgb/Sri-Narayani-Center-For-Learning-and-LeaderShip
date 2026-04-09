@@ -24,12 +24,9 @@ async function typeSentence(elementId, text, speed = 50) {
   element.classList.remove('typewriter-cursor');
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
-  // Start Hero Animations
-  if (document.getElementById('hero-title')) {
-    await typeSentence('hero-title', 'From Classrooms to Board Rooms', 80);
-    await typeSentence('hero-subtitle', 'World-class training programs designed to enhance skills, build confidence, and foster lifelong learning.', 40);
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  // --- UI Initialization (Internal and Mobile) ---
+  // Run these immediately so the site is interactive right away
 
   // Mobile menu functionality
   const btn = document.getElementById('mobile-menu-btn');
@@ -41,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // Testimonials dropdown functionality
+  // Desktop Testimonials dropdown functionality
   const testimonialsBtn = document.getElementById('testimonials-btn');
   const testimonialsDropdown = document.getElementById('testimonials-dropdown');
   const testimonialsArrow = document.getElementById('testimonials-arrow');
@@ -66,7 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // Mobile testimonials toggle functionality
+  // Mobile (hamburger) testimonials toggle functionality
   const mobileTestimonialsBtn = document.getElementById('mobile-testimonials-btn');
   const mobileTestimonialsDropdown = document.getElementById('mobile-testimonials-dropdown');
   const mobileTestimonialsArrow = document.getElementById('mobile-testimonials-arrow');
@@ -96,8 +93,18 @@ document.addEventListener('DOMContentLoaded', async () => {
       
       window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
       
-      // Optional: Clear form
       form.reset();
     });
   });
+
+  // --- Hero Animations (Async) ---
+  // This can run in parallel/background without blocking interactions
+  const startAnimations = async () => {
+    if (document.getElementById('hero-title')) {
+      await typeSentence('hero-title', 'From Classrooms to Board Rooms', 80);
+      await typeSentence('hero-subtitle', 'World-class training programs designed to enhance skills, build confidence, and foster lifelong learning.', 40);
+    }
+  };
+
+  startAnimations();
 });
