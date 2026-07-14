@@ -24,6 +24,10 @@
   .card {
     @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 p-6 flex flex-col;
   }
+  
+  .card .toggle-btn {
+    @apply mt-auto;
+  }
 
   .footer-social-icon {
     @apply h-10 w-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-secondary hover:text-primary transition-all duration-300 transform hover:-translate-y-1;
